@@ -1,2 +1,13 @@
 
 PCB/Ultiboard Exports/QPilot.zip
+*.o
+*.elf
+*.map
+*.d
+*.bak
+**/nbproject/private
+**/nbproject/Makefile-*
+**/nbproject/Package-*
+**/debug
+**/dist
+**/build
