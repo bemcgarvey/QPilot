@@ -7,7 +7,8 @@
       <itemPath>../src/led.h</itemPath>
       <itemPath>../src/pins.h</itemPath>
       <itemPath>../src/version.h</itemPath>
-      <itemPath>../src/packs/PIC32MK1024GPD064_DFP/device.h</itemPath>
+      <itemPath>../src/delays.h</itemPath>
+      <itemPath>../src/device.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -19,7 +20,8 @@
       <itemPath>../src/main.c</itemPath>
       <itemPath>../src/pins.c</itemPath>
       <itemPath>../src/version.c</itemPath>
-      <itemPath>../src/config/default/initialization.c</itemPath>
+      <itemPath>../src/delays.c</itemPath>
+      <itemPath>../src/initialization.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -38,7 +40,7 @@
         <targetDevice>PIC32MK1024GPD064</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool></platformTool>
+        <platformTool>noID</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>2.30</languageToolchainVersion>
         <platform>3</platform>
@@ -78,8 +80,7 @@
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="..\src\config\default;..\src\packs\PIC32MK1024GPD064_DFP;..\src"/>
+        <property key="extra-include-directories" value=""/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="false"/>

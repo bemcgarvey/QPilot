@@ -13,7 +13,7 @@
 /*** DEVCFG0 ***/
 #pragma config DEBUG =      OFF
 #pragma config JTAGEN =     OFF
-#pragma config ICESEL =     ICS_PGx1
+#pragma config ICESEL =     ICS_PGx2
 #pragma config TRCEN =      OFF
 #pragma config BOOTISA =    MIPS32
 #pragma config FSLEEP =     OFF
@@ -42,10 +42,10 @@
 #pragma config FDMTEN =     OFF
 
 /*** DEVCFG2 ***/
-#pragma config FPLLIDIV =   DIV_3
-#pragma config FPLLRNG =    RANGE_8_16_MHZ
+#pragma config FPLLIDIV =   DIV_1
+#pragma config FPLLRNG =    RANGE_13_26_MHZ
 #pragma config FPLLICLK =   PLL_POSC
-#pragma config FPLLMULT =   MUL_60
+#pragma config FPLLMULT =   MUL_20
 #pragma config FPLLODIV =   DIV_4
 #pragma config VBATBOREN =  OFF
 #pragma config DSBOREN =    OFF
@@ -78,6 +78,7 @@ void SYS_Initialize(void* data) {
     OSCCONbits.FRCDIV = 0;
     PB6DIVbits.PBDIV = 0b11; //See errata
 
+    //TODO Disable unused modules
     PMD1SET = 0;
     PMD2SET = 0;
     PMD3SET = 0;

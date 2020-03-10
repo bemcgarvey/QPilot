@@ -11,13 +11,15 @@
 #ifndef LED_H
 #define	LED_H
 
-//TODO Update these for correct pins
-    #define LED1On()        (LATEbits.LATE13 = 1)
-    #define LED1Off()       (LATEbits.LATE13 = 0)
-    #define LED1Toggle()    (LATEbits.LATE13 ^= 1)
-    #define LED2On()        (LATAbits.LATA8 = 1)
-    #define LED2Off()       (LATAbits.LATA8 = 0)
-    #define LED2Toggle()    (LATAbits.LATA8 ^= 1)
+#define LED1On()        (LATCbits.LATC13 = 1)
+#define LED1Off()       (LATCbits.LATC13 = 0)
+#define LED1Toggle()    (LATCbits.LATC13 ^= 1)
+#define LED2On()        (LATBbits.LATB8 = 1)
+#define LED2Off()       (LATBbits.LATB8 = 0)
+#define LED2Toggle()    (LATBbits.LATB8 ^= 1)
+#define ExtLEDOn()      (LATEbits.LATE13 = 1)
+#define ExtLEDOff()     (LATEbits.LATE13 = 0)
+#define ExtLEDToggle()  (LATEbits.LATE13 ^= 1)
 
 #endif	/* LED_H */
 
