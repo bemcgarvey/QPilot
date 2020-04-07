@@ -1,0 +1,8 @@
+QPilot
+Schematic and PCB change log
+
+V1.0 - First PCB version
+
+V1.1
+	Moved LED1 t0 RA10  
+	Moved LED2 to RB9  Previous pins were SOSC pins and input only.  My bad.
