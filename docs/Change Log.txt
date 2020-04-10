@@ -5,4 +5,5 @@ V1.0 - First PCB version
 
 V1.1
 	Moved LED1 t0 RA10  
-	Moved LED2 to RB9  Previous pins were SOSC pins and input only.  My bad.
+	Moved LED2 to RB9  Previous pins were SOSC pins and input only.
+	Swapped RC13 and RC14 on FMU - MOSI and MISO were wrong on schematic
